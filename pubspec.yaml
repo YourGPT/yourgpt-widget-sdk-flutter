@@ -1,20 +1,38 @@
 name: yourgpt_flutter_sdk
-description: YourGPT Chatbot SDK for Flutter
-version: 1.0.0
+description: YourGPT Chatbot SDK for Flutter — chat widget, push notifications, and real-time events.
+version: 1.1.0
 homepage: https://yourgpt.ai
 
 environment:
-  sdk: '>=2.17.0 <4.0.0'
-  flutter: ">=3.0.0"
+  sdk: '>=3.0.0 <4.0.0'
+  flutter: ">=3.10.0"
 
 dependencies:
   flutter:
     sdk: flutter
+
+  # WebView — core chat widget rendering
   webview_flutter: ^4.4.2
+
+  # Device information — auto-enriched visitor data
+  device_info_plus: ^10.0.0
+  package_info_plus: ^8.0.0
+
+  # Push notifications
+  firebase_core: ^3.0.0
+  firebase_messaging: ^15.0.0
+  flutter_local_notifications: ^17.0.0
+
+  # Token persistence
+  shared_preferences: ^2.3.0
 
 dev_dependencies:
   flutter_test:
     sdk: flutter
-  flutter_lints: ^2.0.0
+  flutter_lints: ^3.0.0
 
 flutter:
+  plugin:
+    platforms:
+      ios:
+        pluginClass: YourGPTFlutterPlugin

@@ -47,7 +47,20 @@
 	<true/>
 	<key>UIApplicationSupportsIndirectInputEvents</key>
 	<true/>
-	
+	<key>UIBackgroundModes</key>
+	<array>
+		<string>remote-notification</string>
+	</array>
+
+	<!-- Disable Firebase Messaging APNs swizzling on iOS.
+	     This app uses native APNs via YourGPTFlutterPlugin, not Firebase.
+	     firebase_messaging is auto-linked by Flutter's plugin system but
+	     must not interfere with native APNs handling. -->
+	<key>FirebaseAppDelegateProxyEnabled</key>
+	<false/>
+	<key>FirebaseMessagingAutoInitEnabled</key>
+	<false/>
+
 	<!-- Network security settings -->
 	<key>NSAppTransportSecurity</key>
 	<dict>
