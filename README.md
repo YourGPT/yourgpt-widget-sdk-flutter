@@ -313,13 +313,13 @@ try {
 }
 ```
 
-| Error Type | Description |
-|------------|-------------|
+| Error Type                  | Description                                         |
+| --------------------------- | --------------------------------------------------- |
 | `InvalidConfigurationError` | Configuration is invalid or missing required fields |
-| `NotInitializedError` | SDK has not been initialized |
-| `NotReadyError` | SDK is not ready (still loading or in error state) |
-| `InvalidURLError` | Failed to build a valid widget URL |
-| `WebViewLoadError` | An error occurred in the WebView |
+| `NotInitializedError`       | SDK has not been initialized                        |
+| `NotReadyError`             | SDK is not ready (still loading or in error state)  |
+| `InvalidURLError`           | Failed to build a valid widget URL                  |
+| `WebViewLoadError`          | An error occurred in the WebView                    |
 
 ---
 
@@ -333,5 +333,5 @@ try {
 ## Support
 
 - Documentation: [https://docs.yourgpt.ai](https://docs.yourgpt.ai)
-- Issues: [GitHub Issues](https://github.com/AIChatfly/yourgpt-widget-sdk-flutter/issues)
+- Issues: [GitHub Issues](https://github.com/YourGPT/yourgpt-widget-sdk-flutter/issues)
 - Email: support@yourgpt.ai
